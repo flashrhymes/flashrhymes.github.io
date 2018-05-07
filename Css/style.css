@@ -1,0 +1,442 @@
+:root {
+   --first: #99e265;
+   --second: #252627;
+   --threed: #181818;
+}
+
+*::selection {
+   background-color: #181818;
+   color: #99e265;
+}
+
+
+
+.blockactive {
+   display: block;
+}
+
+a:hover {
+   color: #b5f885;
+   text-decoration: none;
+}
+
+a {
+   color: var(--first);
+}
+
+.elfont {
+   font-family: 'Permanent Marker', cursive;
+}
+
+.stfont {
+   font-family: 'Roboto', sans-serif;
+
+
+}
+
+.prelative {
+   position: relative;
+}
+
+.bg-black {
+   background-color: black;
+
+}
+.bg-black .logo-menu{
+   color: white;
+}
+.logo-menu {
+   
+   text-align: center;
+   line-height: 60px;
+}
+
+body {
+   background: var(--second);
+   overflow: hidden;
+}
+
+.left-menu {
+   overflow: hidden;
+   position: fixed;
+   z-index: 999;
+   width: 60px;
+   bottom: 0;
+   left: 0;
+   height: 100%;
+   background-color: var(--threed);
+}
+
+.menu-btn {
+   display: block;
+   width: 60px;
+   height: 60px;
+   cursor: pointer;
+   position: relative;
+}
+
+.menu-btn p {
+   font-size: 10px;
+   color: white;
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   margin: auto;
+   left: 0;
+   right: 0;
+}
+
+.menu-btn i {
+   font-size: 35px;
+   text-align: center;
+   display: block;
+   line-height: 60px;
+   color: var(--first);
+}
+
+.tabactive {
+   display: block;
+}
+
+.tabcontent {
+   display: none;
+}
+
+.menu-tab .menu-btn {
+   margin-top: 10px;
+}
+
+.back-color-dark {
+   background-color: var(--second);
+   transition: .5s ease-in-out;
+}
+
+.menu-tab {
+   position: absolute;
+   bottom: 30%;
+   transition: 500ms ease-in-out;
+}
+
+.home-content {
+   margin-left: 90px;
+   margin-top: 12%;
+   display: table;
+   width: 86%;
+   color: var(--first);
+
+}
+
+.home-title {
+
+
+   font-size: 60px;
+   font-weight: 600;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+}
+
+.home-leftside .home-title:nth-child(2) {
+   animation-delay: 0.8s;
+}
+
+.home-leftside .home-title:nth-child(3) {
+   animation-delay: 1.6s;
+}
+
+.home-leftside .home-title span {
+   animation-delay: 2.3s;
+   font-size: 20px;
+   color: white;
+}
+
+.home-rightside p {
+   font-style: italic;
+   font-size: 20px;
+   animation-delay: 2.1s;
+   color: white;
+}
+
+.home-rightside h5 {
+   animation-delay: 2.4s;
+   color: white;
+}
+
+
+.home-left-content {
+   float: left;
+   width: 50%;
+}
+
+.home-right-content {
+   position: relative;
+   text-align: center;
+   overflow: hidden;
+   float: left;
+   width: 50%;
+   font-size: 20px;
+}
+
+.hright-title {
+   font-size: 30px;
+   text-align: center;
+   background-color: var(--second);
+   display: inline-block;
+   padding: 0 5px;
+   font-weight: 700;
+
+}
+
+.hright-title::after {
+   content: "";
+   width: 100%;
+   height: 3px;
+   left: 0;
+   top: 20px;
+   background-color: var(--first);
+   position: absolute;
+   z-index: -1;
+   border-radius: 5px;
+}
+
+.big-logo {
+   font-size: 390px;
+   margin-top: -70px;
+   text-shadow: 8px 8px 6px rgba(0, 0, 0, 1);
+   transform: rotate(-10deg);
+   animation-duration: 3s;
+
+}
+
+.progress-bar {
+   width: 100%;
+   height: 4px;
+   margin-top: 1px;
+   border-radius: 4px;
+   border: 1px solid black;
+   background-color: white;
+
+
+}
+
+.skill-tab {
+   display: table;
+   width: 100%;
+   padding: 0 5%;
+   padding-top: 80px;
+}
+
+.progress-bar-in {
+
+   width: 0%;
+   height: 4px;
+   background-color: var(--first);
+
+}
+.skill-frame{
+   display: table;
+   width: 50%;
+    padding: 1% 4%;
+   float: left;
+}
+.progress-content h4 {
+   color: white;
+   font-size: 20px;
+   margin: 0;
+   margin-bottom: 5px;
+   margin-left: 3px;
+}
+
+.skill-tab-cont {
+   display: table;
+   width: 100%;
+  margin-bottom: 20px;
+}
+.profile-cont{
+   width: 90%;
+   display: table;
+   margin-left: 100px;
+   margin-top: 5%;
+}
+.profile-frame{
+   width: 50%;
+   height: 100%;
+   display: table;
+   float: left;
+   padding: 10px;
+}
+.profile-image{
+   width: 150px;
+   height: 150px;
+   border: 1px solid white;
+   border-radius: 10px;
+   
+   float: left;
+}
+.profile-image img{
+   width: 100%;
+   height: 100%;
+   border-radius: 9px;
+   box-sizing: border-box;
+  
+
+}
+.user-info-fir{
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+   color: white;
+   overflow: hidden;
+   padding: 0 3%;
+   height: 150px;
+   animation-delay: 0.1s;
+}
+.user-info-fir h1{
+   font-size: 30px;
+   margin-top: 30px;
+   color: var(--first)
+}
+.user-info-fir span{
+   font-size: 16px;
+   color: white;
+   
+}
+.user-job span{
+   color: var(--first);
+}
+.user-info-fir h3{
+   font-style: italic;
+   font-size: 20px;
+   margin-top: 20px;
+}
+.infotext-cont{
+   width: 100%;
+   color: white;
+   border-top: 1px solid var(--first);
+   border-bottom: 1px solid var(--first);
+   margin-top: 18px;
+   padding-top: 13px;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+   animation-delay: 0.2s ;
+}
+.infotext-cont p{
+   font-size: 17px;
+   
+   font-style: italic;
+}
+.contact-cont{
+   margin-top: 10px;
+   display: table;
+   width: 100%;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+   animation-delay: 0.3s;
+}
+.contact-cont h4{
+   color: var(--first);
+}
+.conframe{
+   width: 50%;
+   color: white;
+   overflow: hidden;
+   float: left;
+   min-height: 100px;
+   padding: 0 2px;
+}
+.toptitle-pro{
+   color: white;
+   margin-top: 33px;
+   font-size: 30px;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+   animation-delay: 0.4s;
+}
+.education-tab{
+   display: table;
+   width: 100%;
+   margin-top: 30px;
+}
+.edu-tabs{
+   width: 100%;
+   display: table;
+   overflow: hidden;
+   margin-bottom: 30px;
+   color: white;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+   padding-top: 15px;
+}
+.edu-tabs:nth-child(1){
+   border-top: 1px solid var(--first);
+   animation-delay: 0.5s;
+}
+.edu-tabs:nth-child(2){
+   animation-delay: 0.6s;
+}
+.edu-tab-left{
+   width: 38%;
+   float: left;
+}
+.edu-tab-right{
+   width: 62%;
+   overflow: hidden;
+  
+}
+
+.edu-tab-left h2{
+   font-size: 22px;
+   margin-bottom: 5px;
+   color: var(--first);
+}
+.edu-tab-left p{
+   font-style: italic;
+}
+.edu-tab-right h2{
+   font-size: 22px;
+   margin-bottom: 5px;
+   color: var(--first);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.s-icon-tab i{
+   color: white;
+   font-size: 20px;
+   transition: 200ms ease-in-out;
+}
+
+.s-icon-tab{
+   width: 40px;
+   height: 40px;
+   box-sizing: border-box;
+   text-align: center;
+   line-height: 40px;
+   
+   
+}
+.s-icon-tab:hover i{color:var(--first);}
+
+.social-media-cont{
+   position: fixed;
+   right: 0;
+   bottom: 10px;
+   width: 40px;
+   display: table;
+   background-color: var(--threed);
+  
+}
+
+
+#particles-js canvas {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   z-index: -1;
+}

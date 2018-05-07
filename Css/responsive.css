@@ -1,0 +1,176 @@
+ @media only screen and (max-height: 500px) {
+     .menu-tab {
+         position: absolute;
+         bottom: 20%;
+     }
+ }
+
+ @media only screen and (max-height: 390px) {
+     .menu-tab {
+         position: static;
+
+     }
+ }
+@media only screen and (max-height: 550px) {
+    body{
+        overflow-y: scroll;
+    }
+}
+
+
+
+ /* Large Devices, Wide Screens */
+
+ @media only screen and (max-width: 1200px) {}
+
+ @media only screen and (max-width: 1124px) {
+     .home-leftside h1{
+         font-size: 50px;
+     }
+     .big-logo {
+         font-size: 330px;
+     }
+}
+
+ @media only screen and (max-width: 1000px) {
+     .big-logo {
+         font-size: 300px;
+         margin-top: -20px;
+     }
+     .home-title {
+         font-size: 30px;
+     }
+     .home-rightside h5 {
+         width: 80%;
+     }
+ }
+
+ /* Medium Devices, Desktops */
+
+ @media only screen and (max-width: 992px) {
+     .home-leftside h1{
+         font-size: 41px;
+     }
+     .big-logo {
+         font-size: 260px;
+     }
+}
+ 
+ /* Small Devices, Tablets */
+
+ @media only screen and (max-width: 768px) {
+     body {
+         overflow-y: scroll
+     }
+     .education-tab{
+         text-align: left;
+     }
+     .home-rightside h5 {
+         width: 100%;
+     }
+     .home-right-content {
+         width: 100%;
+         position: static;
+     }
+     .home-left-content {
+         width: 100%;
+     }
+     .home-content {
+         width: 100%;
+         margin-top: 90px;
+         margin-left: 0px;
+         padding: 0 4%;
+         text-align: center;
+     }
+     .big-logo {
+         margin: 0;
+
+     }
+     .left-menu {
+
+         top: 0;
+         bottom: 100;
+         right: 0;
+         width: 100%;
+         height: 60px;
+     }
+     .menu-tab {
+
+         right: 0;
+         bottom: 0;
+         right: 30%;
+     }
+     .menu-tab .menu-btn {
+         margin-top: 0px;
+         float: left;
+         margin-left: 5px;
+         position: relative;
+         display: block;
+         width: 60px;
+
+     }
+     .skill-frame {
+         display: table;
+         width: 100%;
+         padding: 0 4%;
+         float: left;
+     }
+     .profile-frame {
+         width: 100%;
+     }
+     .profile-cont {
+         margin-top: 80px;
+         margin-left: 0px;
+         padding: 0 4%;
+         width: 100%;
+         text-align: center;
+     }
+     .profile-image {
+         float: none;
+         margin: 0 auto;
+     }
+
+ }
+
+ @media only screen and (max-width: 640px) {
+     .home-title {
+         font-size: 30px;
+     }
+     .menu-tab {
+
+         right: 0;
+         bottom: 0;
+         right: 10%;
+     }
+     .conframe {
+         width: 100%;
+         min-height: 100px;
+     }
+     .education-tab div{
+         width: 100%;
+         float: none;
+         text-align: center;
+     }
+ }
+
+ /* Extra Small Devices, Phones */
+
+ @media only screen and (max-width: 480px) {
+     .menu-tab {
+
+         right: 0;
+         bottom: 0;
+         right: 10%;
+     }
+ }
+
+ /* Custom, iPhone Retina */
+
+ @media only screen and (max-width: 320px) {
+     .menu-tab {
+
+         right: 0;
+         bottom: 0;
+         right: 5px;
+     }
+ }
