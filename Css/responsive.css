@@ -6,10 +6,7 @@
  }
 
  @media only screen and (max-height: 390px) {
-     .menu-tab {
-         position: static;
-
-     }
+    
  }
 @media only screen and (max-height: 550px) {
     body{
