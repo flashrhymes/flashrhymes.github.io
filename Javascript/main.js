@@ -15,7 +15,9 @@ $(document).ready(function () {
         
     });
         
-
+    $('.social-media-button').click(function(){
+       $('.social-media-cont').toggleClass("social-media-toggle");
+    });
    
 
 
