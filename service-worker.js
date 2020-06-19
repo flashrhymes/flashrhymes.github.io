@@ -1,7 +1,7 @@
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+            navigator.serviceWorkerContainer.register('service-worker.js').then(function (registration) {
                 // Registration was successful
                 console.log('Registered!');
             }, function (err) {
