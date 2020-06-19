@@ -1,0 +1,21 @@
+{
+    "name": "Flash Rhymes",
+    "description": "Flash Rhymes CV profiles",
+    "short_name": "FlashRhymes",
+    "icons": [
+       {
+          "src": "./Image/metaicon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+       },
+       {
+          "src": "./Image/metaicon.png",
+          "sizes": "512x512",
+          "type": "image/png"
+       }
+    ],
+    "start_url": "https://flashrhymes.github.io",
+    "display": "standalone",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF"
+ }

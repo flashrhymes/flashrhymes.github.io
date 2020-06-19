@@ -3,6 +3,14 @@
 
 <head>
    <meta charset="utf-8">
+   <!-- Add to home screen for Safari on iOS -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-web-app-title" content="ABC App">
+   <meta name="msapplication-TileImage" content="https://abc.sitem.com/logo-144.png">
+   <meta name="msapplication-TileColor" content="#2F3BA2">
+    <!-- Add to home screen for Safari on iOS -->
+    <link rel="manifest" href="./manifest.json">
    <title>Hi, My name is Flash Rhymes</title>
    <link rel="shortcut icon" href="Image/metaicon.png">
    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,6 +22,25 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
    <link rel="stylesheet" media="screen" href="Css/style.css">
    <link rel="stylesheet" media="screen" href="Css/responsive.css">
+
+
+
+
+   <script>
+      if ('serviceWorker' in navigator) {
+       window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+         console.log('Registered!');
+        }, function (err) {
+         console.log('ServiceWorker registration failed: ', err);
+        }).catch(function (err) {
+         console.log(err);
+        });
+       });
+      } else {
+       console.log('service worker is not supported');
+      }
+     </script>
 
 </head>
 
