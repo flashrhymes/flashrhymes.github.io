@@ -9,8 +9,8 @@
    <meta name="apple-mobile-web-app-title" content="ABC App">
    <meta name="msapplication-TileImage" content="https://abc.sitem.com/logo-144.png">
    <meta name="msapplication-TileColor" content="#2F3BA2">
-    <!-- Add to home screen for Safari on iOS -->
-    <link rel="manifest" href="./manifest.json">
+   <!-- Add to home screen for Safari on iOS -->
+   <link rel="manifest" href="./manifest.json">
    <title>Hi, My name is Flash Rhymes</title>
    <link rel="shortcut icon" href="Image/metaicon.png">
    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -28,19 +28,19 @@
 
    <script>
       if ('serviceWorker' in navigator) {
-       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
-         console.log('Registered!');
-        }, function (err) {
-         console.log('ServiceWorker registration failed: ', err);
-        }).catch(function (err) {
-         console.log(err);
-        });
-       });
+         window.addEventListener('load', function () {
+            navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+               console.log('Registered!');
+            }, function (err) {
+               console.log('ServiceWorker registration failed: ', err);
+            }).catch(function (err) {
+               console.log(err);
+            });
+         });
       } else {
-       console.log('service worker is not supported');
+         console.log('service worker is not supported');
       }
-     </script>
+   </script>
 
 </head>
 
@@ -59,20 +59,19 @@
             </div>
          </a>
          <div class="menu-tab">
-            <div onclick="opentab(event,'home')" class="tabbutton menu-btn back-color-dark"><i class="fa fa-home"
+            <div id="btn_home" onclick="opentab(event,'home')" class="tabbutton menu-btn back-color-dark"><i class="fa fa-home"
                   aria-hidden="true"></i>
                <p>HOME</p>
             </div>
-            <div onclick="opentab(event,'profile')" class="tabbutton menu-btn"><i class="fa fa-user-circle-o"
+            <div id="btn_profile" onclick="opentab(event,'profile')" class="tabbutton menu-btn"><i class="fa fa-user-circle-o"
                   aria-hidden="true"></i>
                <p>PROFILE</p>
             </div>
-            <div onclick="opentab(event,'skills')" class="tabbutton menu-btn"><i class="fa fa-cogs"
+            <div id="btn_skills" onclick="opentab(event,'skills')" class="tabbutton menu-btn"><i class="fa fa-cogs"
                   aria-hidden="true"></i>
                <p>SKILLS</p>
             </div>
-            <a class="menu-btn" target="_blank"
-               href="./Image/cv.pdf">
+            <a class="menu-btn" target="_blank" href="./Image/cv.pdf">
                <h1 class="logo-menu elfont">W</h1>
                <p>CV-PDF</p>
             </a>
@@ -113,7 +112,7 @@
                </div>
                <div class="user-info-fir animated fadeIn">
                   <h1 class="name">Yusif Memmedzade <span>( Flash Rhymes )</span></h1>
-                  <h3 class="user-job">Programmer <span>/</span> Designer</h3>
+                  <h3 class="user-job">Web developer <span>/</span> Designer <span>/</span> IT tech.</h3>
                </div>
                <div class="infotext-cont animated fadeIn">
                   <p>I am a programmer seeking a full-time position in the field of computer technologies. I enjoy
@@ -128,12 +127,13 @@
                   </div>
                   <div class="phome-frame conframe">
                      <h4>Phone</h4>
-                     <p>+(994) 55-917-56-01</p>
+                     <p><a href="tel:+99470-501-34-01">+(994) 70-501-34-01</a> </p>
+                     <p><a href="tel:+99455-917-56-01">+(994) 55-917-56-01</a></p>
                   </div>
                   <div class="email-frame conframe">
                      <h4>Email</h4>
-                     <p>Personal : grandbossgrim@gmail.com</p>
-                     <p>Job : myusif.p303@code.edu.az</p>
+                     <p>Personal : <a href="mailto:myusif.p303@code.edu.az">myusif.p303@code.edu.az</a></p>
+                     <p>Job : <a href="mailto:yusifmemmedzade@gmail.com">yusifmemmedzade@gmail.com</a></p>
                   </div>
                </div>
             </div>
@@ -154,7 +154,7 @@
                      </div>
 
                   </div>
-                  <div class="edu-tabs animated fadeIn">
+                  <!-- <div class="edu-tabs animated fadeIn">
                      <div class="edu-tab-left">
                         <h2>Sep 2005-May 2015</h2>
                         <p>First School</p>
@@ -166,7 +166,7 @@
                         </p>
                      </div>
 
-                  </div>
+                  </div> -->
                </div>
             </div>
          </div>
@@ -178,7 +178,9 @@
       <div id="skills" class="skills-content tabcontent">
 
          <div class="skill-tab">
-            <div class="skill-frame">
+            <div class="skill-frame frame1">
+               <div class="skill-tab-headers"><h4>Web development</h4></div>
+
                <div class="skill-tab-cont animated fadeIn">
                   <div class="progress-content stfont ">
                      <h4>HTML 5</h4>
@@ -279,10 +281,7 @@
                      </div>
                   </div>
                </div>
-            </div>
-
-            <div class="skill-frame">
-
+               
                <div class="skill-tab-cont animated fadeIn">
                   <div class="progress-content stfont ">
                      <h4>MS-SQL (TransactSQL)</h4>
@@ -294,7 +293,7 @@
                      </div>
                   </div>
                </div>
-               
+
                <div class="skill-tab-cont animated fadeIn">
                   <div class="progress-content stfont ">
                      <h4>Entity Framework</h4>
@@ -341,7 +340,7 @@
                </div>
                <div class="skill-tab-cont animated fadeIn">
                   <div class="progress-content stfont ">
-                     <h4>MS Visual studio , office</h4>
+                     <h4>MS Visual studio </h4>
                      <div class="progress-bar ">
                         <div data-bar="87" class="progress-bar-in">
 
@@ -350,11 +349,73 @@
                      </div>
                   </div>
                </div>
+               <div class="skill-tab-cont animated fadeIn">
+                  <div class="progress-content stfont ">
+                     <h4>MS Office 365 </h4>
+                     <div class="progress-bar ">
+                        <div data-bar="100" class="progress-bar-in">
 
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+
+            <div class="skill-frame frame2">
+               <div class="skill-tab-headers"><h4>It manager</h4></div>
+               <div class="skill-tab-cont animated fadeIn">
+                  <div class="progress-content stfont ">
+                     <h4><span>Platforms</span> - Windows,Mac os X , Android, Ios</h4>
+                     <div class="progress-bar ">
+                        <div data-bar="100" class="progress-bar-in">
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="skill-tab-cont animated fadeIn">
+                  <div class="progress-content stfont ">
+                     <h4><span>Networking</span> - LAN / WAN , TCP / IP , DNS , HTTP / HTTPS , Router and
+                        Switches , Active Directory Domain Controls ( UAC)</h4>
+                     <div class="progress-bar ">
+                        <div data-bar="100" class="progress-bar-in">
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="skill-tab-cont animated fadeIn">
+                  <div class="progress-content stfont ">
+                     <h4><span>Hardware</span> - Desktops , Laptops , Printers , Scanners</h4>
+                     <div class="progress-bar ">
+                        <div data-bar="100" class="progress-bar-in">
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="skill-tab-cont animated fadeIn">
+                  <div class="progress-content stfont ">
+                     <h4><span>Technical</span> - Pc Building, Diagnostic , Hardware Changes</h4>
+                     <div class="progress-bar ">
+                        <div data-bar="100" class="progress-bar-in">
+
+                        </div>
+
+                     </div>
+                  </div>
+               </div>
             </div>
 
 
          </div>
+       
 
 
 
@@ -373,7 +434,7 @@
                <i class="fa fa-instagram" aria-hidden="true"></i>
             </div>
          </a>
-         <a target="_blank" href="https://www.youtube.com/channel/UC69ZvBw8yd8CBKuZFcUTDVw?view_as=subscriber"
+         <a target="_blank" href="https://www.youtube.com/channel/UCaEEjqj_nYPKB1TktrbFJjg"
             class="link-youtube">
             <div class="s-icon-tab">
                <i class="fa fa-youtube-play" aria-hidden="true"></i>

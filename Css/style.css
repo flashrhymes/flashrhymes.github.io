@@ -12,22 +12,22 @@
 /* width */
 ::-webkit-scrollbar {
    width: 10px;
- }
- 
- /* Track */
- ::-webkit-scrollbar-track {
-   background: var(--second); 
- }
-  
- /* Handle */
- ::-webkit-scrollbar-thumb {
-   background: var(--threed); 
- }
- 
- /* Handle on hover */
- ::-webkit-scrollbar-thumb:hover {
-   background: var(--first); 
- }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: var(--second);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: var(--threed);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: var(--first);
+}
 
 .blockactive {
    display: block;
@@ -73,7 +73,7 @@ a {
 
 body {
    background: var(--second);
-   overflow: hidden;
+   overflow-y: scroll;
 }
 
 .left-menu {
@@ -259,12 +259,27 @@ body {
    float: left;
 }
 
+.skill-frame .skill-tab-headers {
+   margin: 10px 0;
+   margin-bottom: 30px;
+}
+
+.skill-frame .skill-tab-headers h4 {
+   color: white;
+   font-size: 30px;
+}
+
 .progress-content h4 {
    color: white;
    font-size: 20px;
    margin: 0;
    margin-bottom: 5px;
    margin-left: 3px;
+}
+
+.progress-content h4 span {
+   color: var(--first);
+   font-size: 20px;
 }
 
 .skill-tab-cont {
@@ -504,7 +519,7 @@ body {
 
 }
 
-.color-changer-tab {}
+/* .color-changer-tab {} */
 
 #particles-js canvas {
    position: absolute;
